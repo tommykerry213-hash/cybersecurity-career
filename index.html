@@ -37,21 +37,21 @@
             font-size: 2.5rem;
         }
 
-        .subtitle {
+.subtitle {
             color: var(--accent-color);
             font-weight: 600;
             font-size: 1.2rem;
             margin-bottom: 1.5rem;
         }
 
-        .social-links {
+.social-links {
             display: flex;
             justify-content: center;
             gap: 15px;
             flex-wrap: wrap;
         }
 
-        .social-links a {
+.social-links a {
             color: #ffffff;
             background-color: var(--accent-color);
             padding: 8px 16px;
@@ -61,11 +61,11 @@
             transition: background-color 0.3s ease;
         }
 
-        .social-links a:hover {
+.social-links a:hover {
             background-color: var(--accent-hover);
         }
 
-        .container {
+.container {
             max-width: 1100px;
             margin: 0 auto;
             padding: 2rem 1rem;
@@ -86,31 +86,31 @@
             margin-top: 0;
         }
 
-        .skills-grid {
+.skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 1rem;
         }
 
-        .skill-card {
+.skill-card {
             background-color: rgba(15, 23, 42, 0.5);
             padding: 1rem;
             border-radius: 6px;
             border: 1px solid var(--border-color);
         }
 
-        .skill-card h3 {
+.skill-card h3 {
             margin-top: 0;
             color: #ffffff;
         }
 
-        .project-card {
+.project-card {
             margin-bottom: 1.5rem;
             border-bottom: 1px dashed var(--border-color);
             padding-bottom: 1rem;
         }
 
-        .project-card:last-child {
+.project-card:last-child {
             border-bottom: none;
             padding-bottom: 0;
             margin-bottom: 0;
@@ -124,7 +124,7 @@
             margin-bottom: 0.5rem;
         }
 
-        .evidence-tag {
+.evidence-tag {
             display: inline-block;
             background-color: #334155;
             color: var(--accent-color);
@@ -160,7 +160,7 @@
 
         <section id="summary">
             <h2>Executive Summary</h2>
-            <p>Detail-oriented Security Analyst and Penetration Tester experienced in threat surface mapping, Active Directory attack paths, web application exploitation, and Open Source Intelligence (OSINT) gathering[cite: 2, 3, 5, 9]. Proven track record in simulating real-world adversary tactics to uncover system vulnerabilities, analyzing forensic event logs, and implementing robust defensive mitigations[cite: 1, 2, 3, 9].</p>
+            <p>Detail-oriented Security Analyst and Penetration Tester experienced in threat surface mapping, Active Directory attack paths, web application exploitation, and Open Source Intelligence (OSINT) gathering. Proven track record in simulating real-world adversary tactics to uncover system vulnerabilities, analyzing forensic event logs, and implementing robust defensive mitigations.</p>
         </section>
 
         <section id="technical-arsenal">
@@ -168,27 +168,27 @@
             <div class="skills-grid">
                 <div class="skill-card">
                     <h3>Active Directory Security</h3>
-                    <p>Responder (LLMNR/NBT-NS Poisoning), Kerberoasting (Rubeus), AS-REP Roasting, NetExec (SMB/Password Spraying), BloodHound/Neo4j Attack Paths[cite: 2, 3].</p>
+                    <p>Responder (LLMNR/NBT-NS Poisoning), Kerberoasting (Rubeus), AS-REP Roasting, NetExec (SMB/Password Spraying), BloodHound/Neo4j Attack Paths.</p>
                 </div>
                 <div class="skill-card">
                     <h3>Web Security & API Testing</h3>
-                    <p>Burp Suite (Proxy/Repeater), IDOR Exploitation, Path Traversal, JWT Tampering, SQLi Auth Bypass, Config/Backup File Harvesting[cite: 4].</p>
+                    <p>Burp Suite (Proxy/Repeater), IDOR Exploitation, Path Traversal, JWT Tampering, SQLi Auth Bypass, Config/Backup File Harvesting.</p>
                 </div>
                 <div class="skill-card">
                     <h3>Network & Wireless Recon</h3>
-                    <p>Nmap (SYN/UDP/NSE), Aircrack-ng Suite, Reaver (WPS/Pixie Dust), DNS AXFR Zone Transfers, Banner Grabbing[cite: 2, 5].</p>
+                    <p>Nmap (SYN/UDP/NSE), Aircrack-ng Suite, Reaver (WPS/Pixie Dust), DNS AXFR Zone Transfers, Banner Grabbing.</p>
                 </div>
                 <div class="skill-card">
                     <h3>OSINT & Intelligence</h3>
-                    <p>Shodan, Subfinder, Amass, H8mail (Breach Hunting), TheHarvester, Recon-ng, SpiderFoot, Nuclei[cite: 5].</p>
+                    <p>Shodan, Subfinder, Amass, H8mail (Breach Hunting), TheHarvester, Recon-ng, SpiderFoot, Nuclei.</p>
                 </div>
                 <div class="skill-card">
                     <h3>Evasion & Pivoting</h3>
-                    <p>SSH Port Forwarding (Local/Remote/Dynamic SOCKS), Chisel, Socat, Proxychains, Netcat Shells & File Transfer[cite: 5].</p>
+                    <p>SSH Port Forwarding (Local/Remote/Dynamic SOCKS), Chisel, Socat, Proxychains, Netcat Shells & File Transfer.</p>
                 </div>
                 <div class="skill-card">
                     <h3>SOC Operations & SIEM</h3>
-                    <p>Kali Linux, Windows PowerShell, Sysmon Telemetry Configuration, Log Correlation (Get-WinEvent)[cite: 9].</p>
+                    <p>Kali Linux, Windows PowerShell, Sysmon Telemetry Configuration, Log Correlation (Get-WinEvent).</p>
                 </div>
             </div>
         </section>
@@ -199,20 +199,20 @@
             <div class="project-card">
                 <h3>1. Enterprise Active Directory Penetration Testing</h3>
                 <ul>
-                    <li><strong>Domain Reconnaissance & Enumeration:</strong> Executed SMB discovery across Windows Domain Controller environments using <code>NetExec</code>, mapping shares (<code>/shared</code>, <code>/backup</code>), sensitive data files, and domain accounts via RID cycling[cite: 3].</li>
-                    <li><strong>Credential Harvesting & Name Resolution Poisoning:</strong> Intercepted NTLMv2 authentication hashes using <code>Responder</code> via LLMNR/NBT-NS poisoning[cite: 3]. Conducted password spraying campaigns using <code>Kerbrute</code> without triggering account lockout policies[cite: 3].</li>
-                    <li><strong>Kerberos Exploitation:</strong> Performed Kerberoasting against Service Principal Names (SPNs) using <code>Rubeus</code> and extracted AS-REP hashes from accounts with Kerberos pre-authentication disabled via Impacket[cite: 3].</li>
-                    <li><strong>Attack Path Visualization:</strong> Collected AD telemetry using <code>SharpHound</code> and analyzed 6-hop attack paths to Domain Admin privileges inside <code>BloodHound</code> and <code>Neo4j</code>[cite: 3].</li>
+                    <li><strong>Domain Reconnaissance & Enumeration:</strong> Executed SMB discovery across Windows Domain Controller environments using <code>NetExec</code>, mapping shares (<code>/shared</code>, <code>/backup</code>), sensitive data files, and domain accounts via RID cycling.</li>
+                    <li><strong>Credential Harvesting & Name Resolution Poisoning:</strong> Intercepted NTLMv2 authentication hashes using <code>Responder</code> via LLMNR/NBT-NS poisoning. Conducted password spraying campaigns using <code>Kerbrute</code> without triggering account lockout policies.</li>
+                    <li><strong>Kerberos Exploitation:</strong> Performed Kerberoasting against Service Principal Names (SPNs) using <code>Rubeus</code> and extracted AS-REP hashes from accounts with Kerberos pre-authentication disabled via Impacket.</li>
+                    <li><strong>Attack Path Visualization:</strong> Collected AD telemetry using <code>SharpHound</code> and analyzed 6-hop attack paths to Domain Admin privileges inside <code>BloodHound</code> and <code>Neo4j</code>.</li>
                 </ul>
             </div>
 
             <div class="project-card">
                 <h3>2. Web Application Vulnerability Assessment & Exploitation</h3>
                 <ul>
-                    <li><strong>Insecure Direct Object References (IDOR):</strong> Identified and exploited IDOR vulnerabilities by manipulating URL parameters (<code>/idor1/profile/{id}</code>) to compromise administrator profiles[cite: 4].
+                    <li><strong>Insecure Direct Object References (IDOR):</strong> Identified and exploited IDOR vulnerabilities by manipulating URL parameters (<code>/idor1/profile/{id}</code>) to compromise administrator profiles.
                         <br><span class="evidence-tag">Evidence: Screenshot 2026-08-03 104645_2.png & Screenshot 2026-07-28 112759.png</span>
                     </li>
-                    <li><strong>Authentication Bypasses & Cryptographic Failures:</strong> Exploited insecure backup files (<code>/misconfig4/admin</code>) to gain administrative access[cite: 4]. Analyzed weak cryptographic implementations (MD5 hashing and DES encryption), demonstrating near-instant credential recovery[cite: 4].
+                    <li><strong>Authentication Bypasses & Cryptographic Failures:</strong> Exploited insecure backup files (<code>/misconfig4/admin</code>) to gain administrative access. Analyzed weak cryptographic implementations (MD5 hashing and DES encryption), demonstrating near-instant credential recovery.
                         <br><span class="evidence-tag">Evidence: Screenshot 2026-08-03 044636.png, Screenshot 2026-08-02 041816.png, Screenshot 2026-08-02 041454.png, Screenshot 2026-08-01 020611_2.png</span>
                     </li>
                 </ul>
@@ -221,13 +221,13 @@
             <div class="project-card">
                 <h3>3. Network Reconnaissance & OSINT Intelligence Gathering</h3>
                 <ul>
-                    <li><strong>Stealthy Port Scanning:</strong> Performed half-open TCP SYN scans (<code>nmap -sS</code>) and service enumeration across internal networks to map active hosts and exposed services[cite: 1, 2].
+                    <li><strong>Stealthy Port Scanning:</strong> Performed half-open TCP SYN scans (<code>nmap -sS</code>) and service enumeration across internal networks to map active hosts and exposed services.
                         <br><span class="evidence-tag">Evidence: Screenshot 2026-08-07 230754.png</span>
                     </li>
-                    <li><strong>DNS Zone Transfers & Service Enumeration:</strong> Executed AXFR queries (<code>dig</code>) to extract domain zone files[cite: 5]. Utilized <code>netcat</code> and <code>telnet</code> for service banner grabbing on active ports[cite: 5].
+                    <li><strong>DNS Zone Transfers & Service Enumeration:</strong> Executed AXFR queries (<code>dig</code>) to extract domain zone files. Utilized <code>netcat</code> and <code>telnet</code> for service banner grabbing on active ports.
                         <br><span class="evidence-tag">Evidence: Screenshot 2026-07-10 061103_2.png, Screenshot 2026-07-10 061043.png, Screenshot 2026-07-10 084215.png, Screenshot 2026-07-10 084204.png</span>
                     </li>
-                    <li><strong>Breach Hunting & OSINT:</strong> Automated intelligence collection using <code>Shodan</code> to discover internet-facing assets, <code>h8mail</code> to identify breached corporate emails, and <code>recon-ng</code> for domain profiling[cite: 5].
+                    <li><strong>Breach Hunting & OSINT:</strong> Automated intelligence collection using <code>Shodan</code> to discover internet-facing assets, <code>h8mail</code> to identify breached corporate emails, and <code>recon-ng</code> for domain profiling.
                         <br><span class="evidence-tag">Evidence: Screenshot 2026-07-10 072909.png, Screenshot 2026-07-10 082651.png, Screenshot 2026-07-10 195550.png</span>
                     </li>
                 </ul>
@@ -236,10 +236,10 @@
             <div class="project-card">
                 <h3>4. Network Tunneling, Pivoting & File Transfer</h3>
                 <ul>
-                    <li><strong>Netcat Data Exfiltration:</strong> Demonstrated raw TCP file transfers across network boundaries using <code>netcat</code> listener and redirection commands[cite: 5].
+                    <li><strong>Netcat Data Exfiltration:</strong> Demonstrated raw TCP file transfers across network boundaries using <code>netcat</code> listener and redirection commands.
                         <br><span class="evidence-tag">Evidence: Screenshot 2026-07-18 142545.png</span>
                     </li>
-                    <li><strong>Pivoting & Evasion:</strong> Constructed SOCKS5 proxies using SSH Dynamic Port Forwarding (<code>ssh -D</code>), routed scanning traffic via <code>Proxychains</code>, and deployed <code>Chisel</code> reverse tunnels to access isolated network segments[cite: 5].</li>
+                    <li><strong>Pivoting & Evasion:</strong> Constructed SOCKS5 proxies using SSH Dynamic Port Forwarding (<code>ssh -D</code>), routed scanning traffic via <code>Proxychains</code>, and deployed <code>Chisel</code> reverse tunnels to access isolated network segments.</li>
                 </ul>
             </div>
         </section>
@@ -248,18 +248,18 @@
             <h2>Professional Experience</h2>
             <div class="project-card">
                 <h3>Customer Care Representative | GPC Logistics Company</h3>
-                <p><em>November 2025 – February 2026</em>[cite: 9]</p>
+                <p><em>November 2025 – February 2026</em></p>
                 <ul>
-                    <li>Resolved client issues professionally while maintaining detailed records of client communications[cite: 9].</li>
-                    <li>Compiled monthly analytical reports evaluating customer satisfaction metrics and operational compliance[cite: 9].</li>
+                    <li>Resolved client issues professionally while maintaining detailed records of client communications.</li>
+                    <li>Compiled monthly analytical reports evaluating customer satisfaction metrics and operational compliance.</li>
                 </ul>
             </div>
             <div class="project-card">
                 <h3>Human Resources Administrator | Flood Gate Seed College</h3>
-                <p><em>December 2024 – October 2025</em>[cite: 9]</p>
+                <p><em>December 2024 – October 2025</em></p>
                 <ul>
-                    <li>Administered student onboarding documentation and maintained secure digital and physical record systems[cite: 9].</li>
-                    <li>Prepared analytical compliance reports and executive slide presentations for management review[cite: 6, 7, 9].</li>
+                    <li>Administered student onboarding documentation and maintained secure digital and physical record systems.</li>
+                    <li>Prepared analytical compliance reports and executive slide presentations for management review.</li>
                 </ul>
             </div>
         </section>
@@ -267,9 +267,9 @@
         <section id="education">
             <h2>Education & Certifications</h2>
             <ul>
-                <li><strong>B.Sc. Sociology</strong> | Federal University Oye Ekiti (2019 – 2023)[cite: 9]</li>
-                <li><strong>Cybersecurity Certification</strong> | (Expected Completion: September 2026)[cite: 9]</li>
-                <li><strong>Professional Foundation Certification</strong>[cite: 9]</li>
+                <li><strong>B.Sc. Sociology</strong> | Federal University Oye Ekiti (2019 – 2023)</li>
+                <li><strong>Cybersecurity Certification</strong> | (Expected Completion: September 2026)</li>
+                <li><strong>Professional Foundation Certification</strong></li>
             </ul>
         </section>
 
